@@ -1,3 +1,3 @@
  /* 鼠标点击特效 - 7Core.CN */
- var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");var $i = $("<span/>").text(a[a_idx]);
+ var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("但行前路，不负韶华！", "纵然世间黑暗，仍有一点星光。", "以蝼蚁之行，展鸿鹄之志。", "心态决定高度，细节决定成败。", "没人会嘲笑竭尽全力的人。", "笨鸟先飞早入林，笨人勤学早成材", "抱怨身处黑暗，不如提灯前行。" ,"花自向阳开，人终朝前走。", "与其临渊羡鱼，不如退而结网。", "心有猛虎，细嗅蔷薇。", "有志者，事竟成。", "冰冻三尺，非一日之寒。");var $i = $("<span/>").text(a[a_idx]);
  a_idx = (a_idx + 1) % a.length;var x = e.pageX,y = e.pageY;$i.css({"z-index": 100000000,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});
